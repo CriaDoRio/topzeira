@@ -1,0 +1,21 @@
+//para dar um numero diferente de asteriscos em cada variavel
+#include <stdio.h>
+#include <locale.h>
+
+ImprimeLinha(int qtd){
+int i;
+printf ("\n");
+for (i=1; i<=qtd; i++){
+    printf("*");
+}
+printf("\n");
+
+}
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+     ImprimeLinha(2);
+     printf("Olá mundo!");
+     ImprimeLinha(69);
+}
