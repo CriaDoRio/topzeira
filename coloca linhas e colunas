@@ -1,0 +1,17 @@
+//linhas e colunas
+#include <stdio.h>
+#include <locale.h>
+
+void imprimeCaixa(int qtdLinhas, int qtdColunas){
+    for(int l=0; l<qtdLinhas; l++){
+        for(int c=0; c<qtdColunas; c++){
+            printf("*");
+        }printf("\n");
+    }
+}
+
+int main(){
+    setlocale(LC_ALL, "Portuguese");
+
+    imprimeCaixa(3, 4);
+}
