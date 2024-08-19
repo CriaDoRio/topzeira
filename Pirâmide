@@ -1,0 +1,25 @@
+// pirâmide 
+int main() {
+    int Piramide;  // Variável que define a altura da pirâmide
+    int i, j;
+
+    // Solicita ao usuário a altura da pirâmide
+    printf("Digite a altura da pirâmide: ");
+    scanf("%d", &Piramide);
+
+    // Gera a pirâmide
+    for (i = 1; i <= Piramide; i++) {
+        // Imprime espaços em branco antes dos asteriscos
+        for (j = i; j < Piramide; j++) {
+            printf(" ");
+        }
+        // Imprime os asteriscos
+        for (j = 1; j <= (2 * i - 1); j++) {
+            printf("X");
+        }
+        // Move para a próxima linha
+        printf("\n");
+    }
+
+    return 0;
+}
