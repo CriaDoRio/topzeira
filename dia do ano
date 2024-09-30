@@ -1,0 +1,37 @@
+//dia do ano
+#include <stdio.h>
+
+int main(void) 
+{
+    int dia, mes;
+    puts("dia:");
+    scanf("%d", &dia);
+    puts("mês:");
+    scanf("%d", &mes);
+    int diaDoAno = 0;
+    if (mes > 1)
+        diaDoAno += 31;
+    if (mes > 2)
+        diaDoAno += 29;
+    if (mes > 3)
+        diaDoAno += 31;
+    if (mes > 4)
+        diaDoAno += 30;
+    if (mes > 5)
+        diaDoAno += 31;
+    if (mes > 6)
+        diaDoAno += 30;
+    if (mes > 7)
+        diaDoAno += 31;
+    if (mes > 8)
+        diaDoAno += 31;
+    if (mes > 9)
+        diaDoAno += 30;
+    if (mes > 10)
+        diaDoAno += 31;
+    if (mes > 11)
+        diaDoAno += 30;
+    diaDoAno += dia;
+    printf("O dia do ano: %d.\n", diaDoAno);
+    return 0;
+}
