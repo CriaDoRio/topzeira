@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float W, V, I;
+    printf("coloque a tensao");
+    scanf("%.lf", &V);
+
+    printf("coloque a corrente");
+    scanf("%.lf", &I);
+
+    W = V * I;
+
+    printf("sua potencia eh:%.lf", W);
+
+    return 0;
+}
