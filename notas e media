@@ -1,0 +1,36 @@
+//arquivo txt. com quatro notas e a media em outra variavel
+#include <stdio.h>
+
+int main() {
+    int notas[4];
+    float media;
+    char dados[200];
+    FILE *arquivo;
+
+    printf("bah ");
+    for (int i = 0; i < 4; i++) { //para colocar as notas dentro de uma variavel (mais de uma nesse caso), pelo quatro o maximo é quatro
+        scanf("%d", &notas[i]);
+
+        if (notas[i] < 0 || notas[i] > 100) {
+            return 1;
+        }
+    }
+
+    media = (notas[0] + notas[1] + notas[2] + notas[3]) / 4.0; //segunda variavel que guarda a media pois é float
+
+    snprintf(dados, sizeof(dados), "Notas:\n%d\n%d\n%d\n%d\nMédia: %.2f\n",
+             notas[0], notas[1], notas[2], notas[3], media);
+
+    arquivo = fopen("notas.txt", "w");
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+
+    fprintf(arquivo, "%s", dados);
+    fclose(arquivo);
+
+    printf("Notas e média foram salvas no arquivo notas.txt\n");
+
+    return 0;
+}
