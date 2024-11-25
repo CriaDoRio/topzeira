@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main (){
+int a, b;
+scanf ("%d %d", &a, &b);
+
+while (a!=0 || b!=99){
+printf (" sum:%d", a+b);
+scanf(" %d", &a);
+if (x==0){
+break;}
+else {
+scanf("%d", &b);
+printf"(sum: %d", a+b);}
+return 0;}
