@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main (){
+int n;
+unsigned long long fatorial =1;
+printf ("numero nao negativo")
+scanf("%d", &n);
+if (n<0){
+return 0;}
+else{
+for(int i = 1; i<=n; i++){
+fatorial *=i;}
+printf("%d!=%llu", n, fatorial);}
+return0;}
