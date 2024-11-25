@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stalib.h>
+#include <math.h>
+int main (void){
+int a;
+for (int i=0; i<15; i++){
+printf("%d e %d", a, pow(a,2));
+a+=2}
+return 0;}
